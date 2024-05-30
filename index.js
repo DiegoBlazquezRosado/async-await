@@ -139,7 +139,7 @@ const getRandomCharacter = async () => {
 //Ejercicio 8
 const getRandomCharacterInfo = async () => {
     try {
-        const respAllChars = await fetch(`https://rickandmortyapi.com/api/character/asdasds`);
+        const respAllChars = await fetch(`https://rickandmortyapi.com/api/character/`);
         if (respAllChars.ok) {
             const data = await respAllChars.json();
             maxChars = data.info.count;
